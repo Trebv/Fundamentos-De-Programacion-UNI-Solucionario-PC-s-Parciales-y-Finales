@@ -1,6 +1,5 @@
 #include <iostream>
-int main()
-{
+int main(){
 	int n = 8;
 	int array[n];
 
@@ -30,6 +29,6 @@ int main()
 		}
 		
 	}
-
-	std::cout << numAparece1Vez << "\n1;"
+	std::cout << numAparece1Vez << "\n";
+	return 0;
 }
