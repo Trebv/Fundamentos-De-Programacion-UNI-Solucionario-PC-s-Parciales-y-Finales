@@ -1,7 +1,7 @@
 #include <iostream>
 int main()
 {
-	int n = 7;
+	int n = 8;
 	int array[n];
 	for (int i = 0; i < n; i++){
 		int num = 0;
@@ -13,16 +13,17 @@ int main()
 	int countNum = 0;
 
 	for (int i = 0; i < n; i++){
-		for (int j = i; j < n; j++){
+		for (int j = 0; j < n; j++){
 			if (array[i] == array[j]){
 				countNum++;
 				if (countNum == 2){
 					break;
 				}
-				else{
-					numAparece1Vez = array[i];
-				}
 			}
+		}
+		if (countNum == 1){
+			numAparece1Vez = array[i];
+			break;
 		}
 		countNum = 0;
 	}
